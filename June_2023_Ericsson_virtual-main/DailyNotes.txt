@@ -1,0 +1,650 @@
+
+Language:
+========
+		English-->communication
+		
+Programming Language:
+====================
+			python,c,java,c++,.net............communication with machine
+
+
+				POP   					OOP
+
+		B,BCPL,C,COBOL,PHOTON.... 		c++,java,python,.net....
+
+
+							1)Performance	inheritance,polymorphisam
+							2)Security		abstraction,encapsulation
+
+		OOPS      OOPL
+		
+Why Java:
+----------WORA
+	
+		object oriented programming language
+		
+		
+		1)Platform indepndent    
+		
+		
+		machine1     machine2    machine3 .....
+		windows11    linux	      mac.....		
+																		.net  microsoft
+	Welcome.class
+		
+		
+		2)Garbage Collection
+		
+			c,c++,java
+		
+				welcome to java
+		
+	53 	-->lowercase 
+	
+		Welcome.java
+		
+class Welcome
+{
+
+public static void main(String args[])
+{
+	System.out.println("welcome to java ");
+}
+
+}
+
+
+	1996 jdk 1.0  -->Sun micro system-->Oracle Corporation -->James Gosling
+		 jdk 1.8
+
+	2023 june	20
+
+Java Api Documentation:
+=======================
+
+https://docs.oracle.com/javase/8/docs/api/
+
+
+folder-->related  files together 
+
+package -->
+
+import -->
+
+
+Identifiers:
+=============
+any name in java will call it as identifier
+
+		it can be classname,method name,variable name,obj name,interface name .....
+		classname -->Test@123
+		
+		
+		a-z
+		A-Z
+		0-9
+		$
+		_
+		
+		test123	-->valid
+		
+		123test -->we cant start with digit 
+		
+		
+Variables:
+==========
+
+		anil 89348348973
+
+variable name -->value
+		
+		
+		syntax:
+				datatype varname=value;
+		
+		
+			local variables	:if we define the variable inside the method 
+			
+			global variables:if we define the variable outside the method and inside the class
+			
+							instance,static
+
+datatypes:
+===========
+		 PDT 				NPDT
+	
+8 PDT
+				numeric data 
+		byte	1 byte   8 bits		-128 to 127
+		short 	2 bytes	 			-32768 to 32767					byte age=33;	 1 byte
+		int		4 bytes				-2147483648 to 2147483647    long age=33;  	8 byte
+		long	8 bytes				-2 power 63 to (2 power 63 )-1  long contact=9494943499
+		
+				decimal
+		float	4 bytes			float result=23.4539872347829f;					
+		double	8 bytes			double result=23.4539872347829;					
+
+		char	2 bytes     'M'		C -->english ASCII A-65 a-97 18 international 
+		boolean	1 bit	true-1 ,false-0												
+
+
+			
+
+Instance & Static :
+=====================
+
+
+Syntax:
+=======
+	static proprties using static		variable,method,block
+	if there is no static i.e instance
+
+Memory:
+======
+	static properties will get memory space only once at the time of class loading into JVM   // method area   java Welcome
+	instance properties will get memory space for every object creation    // heap area
+	
+	
+
+			how much,when,where    JDK-->JRE-->JVM-- 5 memory areas
+			
+			class  -->    TREE -->mango tree,banana tree...
+			
+			object --> memory creation 
+			
+			
+			class A
+			{
+			
+			}
+			
+				classname objname= new classname();
+				
+				A obj=new A();
+			
+Access:
+=======
+
+		static properties can be accessed by using classname 
+		instance properties can be accessed by using objref 
+
+Usage:
+=====
+
+				for common data like countryname,orgname,schoolname,clgname....static
+				for unique data like eid,sid,pan,aadhar,acntno.....instance
+
+
+
+Methods
+
+	accessmodifier  instance/static  return   methodname(a,b,c,d...)
+	{
+	
+	
+	}
+
+	public void addOfTwo(int a,int b)
+	{
+	System.out.println("add of two numbers  :"+(a+b));
+	}
+
+	public static int subOfTwo(int a,int b)
+	{
+	return a-b;
+	}
+
+	public static int mulOfTwo()
+	{
+	return a*b;
+	}
+	public  void divOfTwo()
+	{
+	System.out.println(a/b);
+	}
+	
+Flow Control
+=============
+
+			if,else,while,do while,for,switch,case,default,break,continue
+
+
+
+Oops features
+=============
+			inheritance,polymorphisam -->peroformance
+			encapsulation,abstraction -->security
+			
+			
+Inheritance:
+============
+	the process aquiring the features from one class to another class
+	
+
+
+extends ,implements  :code reusability
+
+ class A
+{
+100 methods
+
+}
+class B extends A						class C
+{
+20 methods
+
+
+}
+
+NOTE:
+=======
+	1)By default package for every java file is java.lang
+	2)By default parent class for every java class is java.lang.Object
+
+
+
+single level
+
+multi level
+
+hirarchie
+
+hybrid (single+multi level)
+
+multiple inheritance
+
+	MI supported by java through interfaces
+	MI not supoorted by java through classes 
+		
+	
+
+interface 
+
+
+		non-abstract/concrete method 
+		abstract method
+
+//concrete method
+public void m1()
+{
+
+}
+//method without body
+public abstract void m1();
+
+
+abstraction:
+============
+	its a process hiding implementation by showcasing functionality
+			
+			class is a collection variables(data members)+methods(member functions)
+			
+			class			:its collection of only concrete methods
+			abstract class	:its combination of both abstract and concrete methods
+			interfaces 		:collection of only abstract methods.
+
+
+abstraction :interface 100%
+
+			abstract class -->0%-100%
+
+
+
+interface Parent 						interface Parent1
+{											{
+
+public m1();								public m1();
+
+
+
+}												}
+
+
+class Child implements Parent,Parent1
+{																class-->class-->extends
+																interface--->interface-->extends
+main()															class--->interface->implements
+{
+Child child=new Child();
+child.m1();
+}
+
+m1()
+{
+sop(111);
+}
+}
+
+polymorphisam(method overloading,method overriding,final),Scanner,this,super,constructor,public,private,protected,default,Encapsulation
+
+
+
+polymorphisam:
+==============
+many forms
+
+	method overloading
+				method name is same but signature is different 
+										no of params
+										order of params 
+										type of params 
+	
+												type promotion
+	method overriding 
+				method name is same but body is different  
+				
+class parent
+{
+
+100 mthods
+}
+
+class Child extends Parent
+{
+10 methods
+
+}
+
+
+public 	-->every where 
+private -->class level scope
+protected--> inside package every where and outside when its child
+default	--->package level scope
+
+
+Day-3:
+=======
+
+this,super,constructor,Encapsulation
+
+class Test{
+	public int m1()
+	{
+	return 123;
+	}
+	public Test(){
+	
+	}
+
+public static void main(String args[])
+{
+	Test test=new Test();
+
+}
+
+}
+
+this keyword used to represent current class properties(method,variable,constructor,object)
+super keyword used to represent parent class properties(method,variable,constructor)
+
+
+
+Encapsulation:
+==============
+wrapping up of data and corresponding methods together 
+
+		private  int eid;
+		
+		
+		public 
+
+
+Stream I/O:
+===========
+
+java.io			File
+
+character stream		 PrintWriter,BufferedReader
+byte stream 2 bytes 	 FileOutputStream,FileInputStream
+data stream				 DataOutputStream,DataInputStream  int,float,
+buffered stream 1024 bytes BufferedOutputStream,BufferedInputStream
+object stream			ObjectOutputStream,ObjectInputStream
+
+
+
+
+String,StringBuffer,StringBuilder
+==================================
+
+			java.lang
+
+String -->imuttable  
+
+			String literal				String orgname="ericsson";
+			String with new keyword		String orgName1=new String("ericsson");
+	
+	
+	
+	
+	
+	
+	
+StringBuffer----->StringBuffer methods are synchronized , String builder methods are not synchronized
+
+StringBuilder--> muttable
+
+
+
+		public void m1()				 		multiple threads can access 
+		{
+		
+		}
+
+		public synchronized void m1()			only one thread is allowed to access 
+		{
+													t1,t2,t3
+		}
+
+
+
+
+Exception handling:
+====================
+two limitations
+
+	1)Abnormal Termination
+	2)System defined ERROR MESSAGES 
+
+
+try,catch,finally,throw,throws
+
+
+throw	--->throw new AE/AIOE/NFE.....
+
+throws 
+
+		
+		1)make your class as child class to the any one of the parent exception classes(Exception/RuntimeException/Throwable)
+
+		2)take param constructor
+		
+		TASK:
+		====
+		
+		Scanner
+				Username
+				password
+		
+			ericsson  and ericsson123
+		
+				login success
+			invalidcredential
+					
+			
+			variables
+			
+Arrays:
+=======
+	Limitations
+	
+		1)only homogeneous data/similar data  is allowed
+		2)arrays are fixed in size   AIOE
+		3)no utility methods
+
+
+
+Collections Framework:
+======================
+
+		Advantages:
+		===========
+		1)both homogeneous data/similar data and heterogeneous/disimilar data is allowed
+		2)collections are not fixed in size  or growable in nature   AL,vector 
+		3)lots utility methods
+
+
+
+List:
+=====
+	1)duplicates are allowed
+	2)insertion order preserved
+
+		AL,LL,V,S
+
+//Comparable,Comparator,Map,concurrentcollections,multi threading ,concurrent threads,java8
+
+
+
+
+
+
+
+
+
+multithreading:
+===============
+
+	Multitasking 
+				
+				Process Based multi tasking:executing several tasks simultaniously where each task is seperate independent process 
+								teams,eclipse,mediaplayer
+				Thread Based multi tasking :executing several tasks simultaniously where each and every task belongs same process 
+
+			thread is a smallest unit of process
+			
+			process is a collection of threads
+
+	
+
+				class App{
+				
+				
+				segment1
+
+
+
+
+				segment2
+				
+				
+				
+				segment3 
+				
+				}
+		
+
+
+2 ways to create thread
+
+	1)Implements Runnable
+	2)extends Thread
+
+	3)Implements Callable-->call
+
+Inter thread communication
+
+			wait,notify,notifyAll
+`
+
+			running-->waiting area wait()
+
+
+			notify
+
+
+			1-100
+			
+			even 2,4,6,8,10...100			wait()
+			odd	 1,3,5,7,9,...99			1,notify()wait()
+										1,2,
+
+Concurrent Threads 
+===================
+
+			conconrrency
+			
+			ExecutorService 
+			
+			
+			ThreadPool
+			
+			
+			
+			
+				
+Concurrent Collections
+====================
+
+		ArrayList-->no thread Safety
+		Vector-->thread safety -->locking mechanisam is different 
+		
+		
+		HashSet-->not synchronized 
+		
+		HashMap-->not synchronized
+		HashTable-->synchronized
+
+
+Java8 Features:
+=============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
